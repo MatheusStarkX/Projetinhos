@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+    --cor1: #a9a4ff;
+    --cor2: #4e7ed8;
+    --cor3: #3A34B3;
+    --cor4: #fff177;
+    --cor5: #05033a;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--cor1);
+    display: flex;  
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+}
+
+.logo {
+    height: 40px;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 0px 10px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+img {
+   height: 100%; 
+}
+
+#search {
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem;
+    margin: 0px 10px;
+    box-shadow: 1px 1px 6px #0002;    
+}
+
+#search:focus-visible {
+    outline: 2px solid var(--cor2);
+} 
+
+#search::placeholder {
+    color: var(--cor5);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+.menu a {  
+    font-size: 12px;
+    font-weight: 600;
+    color: black;    
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 8px;
+    margin: 0px 5px;   
+    transition: .4s;
+}
+
+.menu a:hover {
+    background-color: var(--cor2);
+    color: var(--cor0);
+}
+
+.perfil{
+    border: 1px solid black;
+    margin-left: auto;
+}
+
+.perfil:hover {
+    background-color: var(--cor2);
+}
+
+@media screen and (max-width: 600px) {
+    #search {
+        display: none;
+    }
+}

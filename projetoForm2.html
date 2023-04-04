@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AssetsForm2/styleForm2.css">
+    <script src="https://kit.fontawesome.com/693d2e0182.js" crossorigin="anonymous"></script>
+    <title>Formulário de Pets</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <h1 class="brand">
+                <i class="fa-solid fa-paw"></i> Doguíneos
+            </h1>
+            <div class="form-image">
+                <img src="AssetsForm2/doguinho.png" alt="doguinho">
+            </div>
+        </div>
+        <div class="right-container">
+            <header>
+                <h1>Amantes de pets, garanta o melhor cuidado para seu filhote!</h1>
+            </header>
+            <main>
+                <div class="input-box">
+                    <label for="pet-name">Nome</label>
+                    <input id="pet-name" type="text" name="pet-name" placeholder="Nome do pet" required>
+                </div>
+                <div class="button-box">
+                    <button id="pet-upload"><i class="fa-solid fa-camera"></i></button>
+                    <label for="pet-upload">Carregue uma foto</label>
+                </div>
+                <div class="input-box">
+                    <label for="pet-breed">Raça</label>
+                    <input id="pet-breed" type="text" name="pet-breed" placeholder="Raça do pet" required>
+                </div>
+                <div class="input-box">
+                    <label for="pet-birthday">Data de Nascimento</label>
+                    <input id="pet-birthday" type="text" name="pet-birthday" placeholder="XX/XX/XXXX" required>
+                </div>
+
+                <div class="radio-box">
+                    <label for="pet-gender-female">Gênero</label>
+                    <div class="radio-box-container">
+                        <input type="radio" name="pet-gender" id="pet-gender-female" value="female" checked>
+                        <label for="pet-gender-female">Fêmea</label>
+                        <input type="radio" name="pet-gender" id="pet-gender-male" value="male">
+                        <label for="pet-gender-male">Macho</label>
+                    </div>
+                </div>
+                <div class="radio-box">
+                    <label for="spay/neuter-no">Castrado(a)?</label>
+                    <div class="radio-box-container">
+                        <input type="radio" name="pet-spay/neuter?" id="spay/neuter-no" value="no" checked>
+                        <label for="spay/neuter-no">Não</label>
+                        <input type="radio" name="pet-spay/neuter?" id="spay/neuter-yes" value="yes">
+                        <label for="spay/neuter-yes">Sim</label>
+                    </div>
+                </div>
+                <div class="radio-box especial">
+                    <label for="0-10kg">Peso</label>
+                    <div class="radio-box-container">
+                        <input type="radio" name="pet-weight" id="0-10kg" value="0-10kg" checked>
+                        <label for="0-10kg">0-10kg</label>
+                        <input type="radio" name="pet-weight" id="11-20kg" value="11-20kg">
+                        <label for="11-20kg">11-20kg</label>
+                        <input type="radio" name="pet-weight" id="21-30kg" value="21-30kg">
+                        <label for="21-30kg">21-30kg</label>
+                        <input type="radio" name="pet-weight" id="30+kg" value="30+kg">
+                        <label for="30+kg">30+kg</label>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <button id="back"><a href="#">Voltar</a></button>
+                <button id="send"><a href="#">Enviar</a></button>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

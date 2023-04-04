@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --cor1: #fbe4ae;
+    --cor2: #dacb8a;
+    --cor3: #897632;
+    --cor4: #392e0e;
+    --cor5: #6bb88a;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor1);
+}
+
+.container {
+    width: 60%;
+    /* height: */
+    display: flex;
+    box-shadow: 5px 5px 15px #0002;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor3);
+    padding: 40px 0px 0px 0px;
+}
+
+.brand {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.brand > i {
+    display: inline-block;
+    color: var(--cor3);
+    background: var(--cor1);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 24px;
+    margin-right: 10px;
+    transform: rotate(-45deg);
+}
+
+.form-image {
+    height: 170px;
+}
+
+.form-image img {
+    height: 170px;
+}
+
+.right-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor1);
+    padding: 30px;
+}
+
+header {
+    margin-bottom: 15px;
+    font-size: 1.02rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 0px;
+    align-items:center;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.input-box input {
+    margin: 5px 2px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #0002;
+}
+
+.input-box input:hover {
+    background-color: #d1d1d152;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid var(--cor4);
+}
+
+.input-box input::placeholder {
+    color: var(--cor4);
+}
+
+.input-box label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.button-box {
+    margin-bottom: 18px;
+}
+
+.button-box button {
+    margin-right: 10px;
+    border: none;
+    border-radius: 50%;
+}
+
+.button-box button > i {
+    display: inline-block;
+    color: var(--cor1);
+    background: var(--cor3);
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-box button > i:hover {
+    background-color: var(--cor4);
+}
+
+.button-box label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.radio-box {
+    display: inline;
+    padding-right: 4px;
+    width: 198px;
+    margin-bottom: 18px;
+}
+
+.radio-box-container {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    margin: 5px 2px;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.radio-box input[type="radio"] {
+    display: none;
+}
+
+.radio-box input[type="radio"] + label{
+    font-weight: 200;
+    cursor: pointer;
+    padding: 5px;
+    width: 45%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+
+.radio-box input[type="radio"]:checked + label{
+    background-color: var(--cor3);
+    color: white;
+}
+
+.radio-box.especial {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer button {
+    background-color: var(--cor3);
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: var(--cor4);
+}
+
+footer button a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1310px) {
+    .left-container {
+        display: none;
+    }
+    .right-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .right-container {
+        width: 80%;
+        margin: auto;
+        box-shadow: 1px 1px 6px #0002;
+    }
+    .container {
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 60%;
+    }
+    .right-container > form {
+        width: 100%;
+        padding: 10px;        
+    }
+    h1 {
+        font-size: 23px;
+    }
+    main {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 250px;
+        margin-bottom: 20px;
+    }
+    .input-box {
+        width: 90%;
+    }
+    .button-box {
+        width: 90%;
+    }
+    .radio-box {
+        width: 90%;
+        flex-direction: column;
+    }
+    .radio-box-container {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+}
